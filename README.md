@@ -77,6 +77,12 @@ Here is a sample of the training images and its true mask:
 </p>
 
 ## 4. Model Development
+<p align="center">
+  <img src="https://github.com/natashanazamil/Cell-Nuclei--Semantic-Segmentation/blob/main/images/model.png" alt="Model Architecture">
+  <br>
+  <em>Model Architecture</em>
+</p>
+
 * The base model uses transfer learning from tensorflow keras applications, **MobileNetV2**
 * The output of the base_model is extracted and used as input for the upsampling path of the U-Net model. 
 * The upsampling path of the U-Net model using a list of upsampling layers created using the `pix2pix` module.
