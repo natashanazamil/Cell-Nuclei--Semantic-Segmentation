@@ -4,6 +4,8 @@ This project aims to develop an automated tool for detecting cell nuclei in micr
 
 The approach used utilizes a semantic segmentation model that can predict the mask of a cell nuclei in an image, enabling accurate detection and analysis. The model was trained on a dataset of microscopy images, and achieved an accuracy score of 94%.
 
+Data source: https://www.kaggle.com/competitions/data-science-bowl-2018/overview
+
 ## Classes
 1. `Augment()` <br/>
 The Augment() class is used to augment the training images. It uses Tensorflow Keras Layers (tensorflow.keras.layers.Layer) to RandomFlip the images and masks. 
@@ -35,7 +37,6 @@ The DisplayCallback() class is used to display the original input, true mask and
   - Displays the input image, true mask and predicted mask of the test dataset using the loaded model
 
 ## 1. Data Loading
-Data source:
 
 ### List of train images and masks
 Once the dataset is loaded, its seperated into train images and mask lists. The list will obtain images and masks that are color converted using the cv2 library and resized into 128 by 128. For the mask, its dimensiona are expanded to (128,128,1)
