@@ -1,5 +1,9 @@
 # Cell-Nuclei--Semantic-Segmentation
 
+This project aims to develop an automated tool for detecting cell nuclei in microscopic images. The detection of cell nuclei is a crucial first step in many research studies, as it enables researchers to analyze the DNA contained within the nucleus and gain insights into the underlying biological processes at play.<br/>
+
+The approach used utilizes a semantic segmentation model that can predict the mask of a cell nuclei in an image, enabling accurate detection and analysis. The model was trained on a dataset of microscopy images, and achieved an accuracy score of 94%.
+
 ## Classes
 1. `Augment()` <br/>
 The Augment() class is used to augment the training images. It uses Tensorflow Keras Layers (tensorflow.keras.layers.Layer) to RandomFlip the images and masks. 
